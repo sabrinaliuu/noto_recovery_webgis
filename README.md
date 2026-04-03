@@ -1,7 +1,7 @@
 # Life Recovery after Noto Peninsula Earthquake
 
 ## About the website
-https://sabrinaliuu.github.io/noto_recovery_gis/
+https://sabrinaliuu.github.io/noto_recovery_webgis/
 ### Introduction
 This is a website that visualizes the study <i>Analyzing the Seven Critical Elements of Life Recovery Using News: A Case Study of the 2024 Noto Peninsula Earthquake</i> by Yen-Ching Liu* and Shosuke Sato.
 
