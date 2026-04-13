@@ -423,4 +423,12 @@ modals.forEach(modal => {
 
 });
 
+// toggle left panel
+function toggleLeftPanel(){
+
+    const panel = document.getElementById("leftPanel");
+    panel.classList.toggle("collapsed");
+
+}
+
 window.onload = init;
