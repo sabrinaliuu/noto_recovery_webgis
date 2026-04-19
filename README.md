@@ -1,5 +1,7 @@
 # Life Recovery after Noto Peninsula Earthquake
-
+<b>[2026/04/20 update] New version for C# ASP.NET (deploy on AZURE)</b></br>
+⚫<a href="https://github.com/sabrinaliuu/noto_recovery_webgis_">Github</a>
+🔵<a href="https://notorecovery-fmdvf9cucdbpgacw.canadacentral-01.azurewebsites.net">Website</a>
 ## About the website
 https://sabrinaliuu.github.io/noto_recovery_webgis/
 ### Introduction
