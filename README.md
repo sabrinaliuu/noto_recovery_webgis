@@ -16,8 +16,10 @@
   <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
 </p>
 
+:round_pushpin:This is the <b>Flask</b> version. If you want to see the ASP.NET version, please find the link below: 
+
 <p>
-  🥇<b>[2026/04/20 update] New version for C# ASP.NET (deploy on AZURE)</b></br>
+  <mark>🥇<b>[2026/04/20 update] New version for C# ASP.NET (deploy on AZURE)</b></br> </mark>
   ⚫<a href="https://github.com/sabrinaliuu/noto_recovery_webgis_">Github</a>
   🔵<a href="https://notorecovery-fmdvf9cucdbpgacw.canadacentral-01.azurewebsites.net">Website</a>
 </p>
@@ -41,8 +43,8 @@ As you select the pie chart, the details for the change in sentiment will displa
 You can enter a recovery-related sentence in <b>Japanese</b> here.<br>
 The <b>Life Recovery Elements, Cities in Noto Peninsula, and Sentiment </b> will be recognized by our NLP models and displayed.
 
-### Tools
-GitHub Pages (Frontend) + Render (Backend) by Flask
+### Skills
+Use `JS/CSS/Leaflet (frontend) + ASP.NET/C# (backend)` then deploy by `GitHub Pages + Render by Flask`
 
 ## About the study
 In this study, NLP methods were applied to recognize the <b>recovery elements (keyword-based approach), sentiments (GPT-based approach), and locations (keyword-based approach)</b> in each paragraph. In other words, the textual data was converted into numerical data for further quantitative analysis.
