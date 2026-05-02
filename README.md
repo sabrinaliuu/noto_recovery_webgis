@@ -16,12 +16,17 @@
   <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
 </p>
 
-:round_pushpin:This is the <b>Flask</b> version. If you want to see the ASP.NET version, please find the link below: 
+:round_pushpin:This is the <b>Flask</b> version. If you want to see the other versions, please find the link below:
 
 <p>
-  <mark>🥇<b>[2026/04/20 update] New version for C# ASP.NET (deploy on AZURE)</b></br> </mark>
-  ⚫<a href="https://github.com/sabrinaliuu/noto_recovery_webgis_">Github</a>
-  🔵<a href="https://notorecovery-fmdvf9cucdbpgacw.canadacentral-01.azurewebsites.net">Website</a>
+   :arrow_forward:<b>For VueJS + Flask version: </b></br>
+  ⚫<a href="https://github.com/sabrinaliuu/noto_recovery_webgis_vue" target="_blank">Github</a>
+  🔵<a href="https://sabrinaliuu.github.io/noto_recovery_webgis_vue/" target="_blank">Website</a>
+</p>
+<p>
+   :arrow_forward:<b>For JS + ASP.NET version: </b></br>
+  ⚫<a href="https://github.com/sabrinaliuu/noto_recovery_webgis_" target="_blank">Github</a>
+  🔵<a href="https://notorecovery-fmdvf9cucdbpgacw.canadacentral-01.azurewebsites.net/" target="_blank">Website</a>
 </p>
 
 ## About the website
@@ -34,17 +39,30 @@ This is a website that visualizes the study <i>Analyzing the Seven Critical Elem
 
 This website is produced by Yen-Ching Liu with Gemini.
 ### Interface
-#### Map and Charts
+#### - Map and Charts
 You can select <b>Recovery Element and Month</b>.
 The sentiment composition for each city will show on the map in a pie chart and under the map in a bar chart.<br>
 As you select the pie chart, the details for the change in sentiment will display on the left.
 
-#### Recognition: NLP Model Application
+#### - Recognition: NLP Model Application
 You can enter a recovery-related sentence in <b>Japanese</b> here.<br>
 The <b>Life Recovery Elements, Cities in Noto Peninsula, and Sentiment </b> will be recognized by our NLP models and displayed.
 
+### Web API
+If you want to use the NLP model, you can retrieve it by
+```
+## Python
+# - Example -
+import requests
+r = requests.post("https://noto-recovery-webgis.onrender.com/analyze", json={"text":"能登半島地震で被災した輪島塗の工房を支援しようと東日本大震災の被災地で仮設商店として使われていたトレーラーハウス2台が、9日、輪島市の団体「輪島塗若手ネットワーク」に寄贈されました"})
+print(r.json())
+
+# Return json
+{"elements":["relation to government","economic and financial situation"],"places":["輪島市"],"sentiment":"Neutral"}
+```
+
 ### Skills
-Use `JS/CSS/Leaflet (frontend) + ASP.NET/C# (backend)` then deploy by `GitHub Pages + Render by Flask`
+Use `JS/CSS/Leaflet (frontend) + Flask (backend)` then deploy by `GitHub Pages + Render`
 
 ## About the study
 In this study, NLP methods were applied to recognize the <b>recovery elements (keyword-based approach), sentiments (GPT-based approach), and locations (keyword-based approach)</b> in each paragraph. In other words, the textual data was converted into numerical data for further quantitative analysis.
@@ -58,4 +76,6 @@ Details are provided below:
 
 This demonstrates the feasibility of using NLP methods on news data to gain insights into news media perceptions and to assess news coverage of disaster recovery.
 
-Note: Manuscript under review
+<mark>The study will be published in the <a href="https://www.fujipress.jp/jdr/"  target="_blank">Journal of Disaster Research</a>, Vol. 21, No. 3, in June 2026, 
+as <i>Yen-Ching Liu*, Shosuke Sato: Analyzing the Seven Critical Elements of Life Recovery Using News: A Case Study of the 2024 Noto Peninsula Earthquake</i>.</mark>
+
